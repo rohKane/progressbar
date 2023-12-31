@@ -1,3 +1,6 @@
+# This is QBCore Progressbar edited by me and inspired by NoPixel 4.0.
+
+
 # Progressbar
 
 Dependency for creating progressbars in QB-Core.
