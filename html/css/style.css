@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+html {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 15%;
+    position: fixed;
+    bottom: 12.65%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-labels {
+    width: 100%;
+    height: 4vh;
+    line-height: 4vh;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.progress-labels div {
+    font-size: 1.3vh;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+
+
+.progress-bar-container {
+    width: 30vh;
+    height: 3vh;
+    background: rgba(0, 0, 0, 0);
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(172, 170, 170, 0.373);
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0) !important;
+    width: 0%;
+    height: 4vh;
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+}
+
+/* Pixel Bar*/
+.container {
+    width: 100%;
+}
+
+.item {
+    width: 1vh;
+    height: 0.850vh;
+    background-color: rgba(0, 0, 0, 0.526);
+    margin-left: 1.6px;
+    float: left;
+    display: block;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.filled {
+    background-color: #3bd2a8 !important;
+}
+
+/* Percentage */
+.mybar {
+    width: 100%;
+    height: 4vh;
+    line-height: 4vh;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.mybar div {
+    font-size: 1.3vh;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    text-align: right;
+}
