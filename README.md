@@ -24,10 +24,10 @@ Dependency for creating progressbars in QB-Core.
   >    animDict = "mp_suicide",
   >    anim = "pill",
   >    flags = 49,
-  >}, {}, {}, function() -- Done
-  >    StopAnimTask(PlayerPedId(), "mp_suicide", "pill", 1.0)
-  >end, function() -- Cancel
-  >    StopAnimTask(PlayerPedId(), "mp_suicide", "pill", 1.0)
+  >}, {}, {}, function()
+  >    -- Done
+  >end, function()
+  >    -- Cancel
   >end)
   > ```
 
@@ -49,7 +49,7 @@ Dependency for creating progressbars in QB-Core.
   >        disableMovement = false,
   >        disableCarMovement = false,
   >        disableMouse = false,
-  >        disableCombat = true,    
+  >        disableCombat = true,
   >    },
   >    animation = {
   >        animDict = "mp_suicide",
@@ -58,6 +58,45 @@ Dependency for creating progressbars in QB-Core.
   >    },
   >    prop = {},
   >    propTwo = {}
+  >}, function(cancelled)
+  >    if not cancelled then
+  >        -- finished
+  >    else
+  >        -- cancelled
+  >    end
+  >end)
+  > ```
+  > **Props Example:**
+  > ```lua
+  >exports['progressbar']:Progress({
+  >    name = "random_task",
+  >    duration = 5000,
+  >    label = "Doing something",
+  >    useWhileDead = false,
+  >    canCancel = true,
+  >    controlDisables = {
+  >        disableMovement = false,
+  >        disableCarMovement = false,
+  >        disableMouse = false,
+  >        disableCombat = true,
+  >    },
+  >    animation = {
+  >        animDict = "missheistdockssetup1clipboard@base",
+  >        anim = "pill",
+  >        flags = 49,
+  >    },
+  >    prop = {
+  >      model = 'prop_notepad_01',
+  >      bone = 18905,
+  >      coords = vec3(0.1, 0.02, 0.05),
+  >      rotation = vec3(10.0, 0.0, 0.0),
+  >    },
+  >    propTwo = {
+  >      model = 'prop_pencil_01',
+  >      bone = 58866,
+  >      coords = vec3(0.11, -0.02, 0.001),
+  >      rotation = vec3(-120.0, 0.0, 0.0),
+  >    }
   >}, function(cancelled)
   >    if not cancelled then
   >        -- finished
@@ -77,15 +116,15 @@ Dependency for creating progressbars in QB-Core.
   - ProgressWithStartEvent(**data**: table, **start**: function, **finish**: function)
     > Works like a normal progressbar, the data parameter should be the same as the data passed into the `Progress` export above.<br>
     > The start function gets triggered upon the start of the progressbar.<br>
-    > The finish handler is the same as the `handler` parameter in the `Progress` export above. 
+    > The finish handler is the same as the `handler` parameter in the `Progress` export above.
 
   - ProgressWithTickEvent(**data**: table, **tick**: function, **finish**: function)
     > Works like a normal progressbar, the data parameter should be the same as the data passed into the `Progress` export above.<br>
     > The tick function gets triggered every frame while the progressbar is active.<br>
-    > The finish handler is the same as the `handler` parameter in the `Progress` export above. 
+    > The finish handler is the same as the `handler` parameter in the `Progress` export above.
 
   - ProgressWithTickEvent(**data**: table, **start**: function, **tick**: function, **finish**: function)
     > Works like a normal progressbar, the data parameter should be the same as the data passed into the `Progress` export above.<br>
     > The start function gets triggered upon the start of the progressbar.<br>
     > The tick function gets triggered every frame while the progressbar is active.<br>
-    > The finish handler is the same as the `handler` parameter in the `Progress` export above. 
+    > The finish handler is the same as the `handler` parameter in the `Progress` export above.
