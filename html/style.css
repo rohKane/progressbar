@@ -110,10 +110,9 @@ body {
     top: 0.5vh;
 }
 
-/* ... your existing styles ... */
 
 .responsive-container {
-    width: calc(100% + -10px); /* Adjust the value as needed to make it longer */
+    width: calc(100% + -10px);
     left: 5.5px;
     top: 0.960vh;
     position: absolute;
