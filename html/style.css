@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+html {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    width: 15%;
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#progress-label {
+    font-size: 1.3vh;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bold;
+    bottom: -0.5vh;
+}
+
+#progress-percentage {
+    font-size: 1.3vh;
+    right: -1.9vw;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bold;
+    bottom: -0.5vh;
+}
+
+.progress-bar-container {
+    width: 16.8vw;
+    height: 2.8vh;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(172, 170, 170, 0.373);
+}
+
+#progress-bar {
+    background-color: #ffffff00;
+    width: 0%;
+    height: 0.5vh;
+    border-radius: 2px;
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+}
+
+
+
+/* Pixel Bar*/
+.container {
+    width: 100%;
+}
+
+.item {
+    width: 1vh;
+    height: 0.850vh;
+    background-color: rgba(0, 0, 0, 0.526);
+    margin-left: 1.6px;
+    float: left;
+    display: block;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.filled {
+    background-color: #3bd2a8 !important;
+}
+
+
+
+.responsive-bar {
+    background: linear-gradient(to right, transparent, rgb(61, 63, 79) 40%, transparent);
+    width: 100%; /* Use percentage for responsiveness */
+    height: 1.8vh;
+    position: absolute;
+    top: 0.5vh;
+}
+
+/* ... your existing styles ... */
+
+.responsive-container {
+    width: calc(100% + -10px); /* Adjust the value as needed to make it longer */
+    left: 5.5px;
+    top: 0.960vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
