@@ -89,7 +89,7 @@ body {
 .item {
     width: 1vh;
     height: 0.850vh;
-    background-color: rgba(0, 0, 0, 0.526);
+    background-color: rgba(0, 0, 0, 0.450);
     margin-left: 1.6px;
     float: left;
     display: block;
