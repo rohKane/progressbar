@@ -249,32 +249,3 @@ local function isDoingSomething()
     return isDoingAction
 end
 exports('isDoingSomething', isDoingSomething)
-
-
-
-
-
--- Debug
--- Assuming QBCore and QBCore.Functions.Progressbar are available
-local QBCore = exports['qb-core']:GetCoreObject()
-
-RegisterCommand('lol', function(source, args)
-        QBCore.Functions.Progressbar("attach_car", "Loading", 10000, false, true, {
-            disableMovement = false,
-            disableCarMovement = true,
-            disableMouse = false,
-            disableCombat = true,
-        }, {
-            animDict = "missheistdockssetup1clipboard@idle_a",
-            anim = "idle_a",
-            flags = 49,
-        }, {}, {}, function() -- Done
-            print("lol")
-        end, function() -- Cancel
-            TriggerEvent("chat:addMessage", {
-                color = {255, 0, 0},
-                multiline = true,
-                args = {"System", "Failed to attach the car!"}
-            })
-        end)
-end, false)
