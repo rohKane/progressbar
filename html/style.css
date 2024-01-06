@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap");
 
 html {
     overflow: hidden;
@@ -35,12 +35,12 @@ body {
 }
 
 #progress-label {
-    font-size: 1.3vh;
+    font-size: 1.31vh;
     line-height: 4vh;
     position: relative;
     color: #ffffff;
     z-index: 10;
-    font-weight: bold;
+    font-weight: 550;
     bottom: -0.5vh;
 }
 
@@ -51,7 +51,7 @@ body {
     position: relative;
     color: #ffffff;
     z-index: 10;
-    font-weight: bold;
+    font-weight: 400;
     bottom: -0.5vh;
 }
 
