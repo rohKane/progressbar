@@ -1,6 +1,7 @@
 # This is QBCore Progressbar edited by me and inspired by NoPixel 4.0.
-![cc11d9c247bce5397c182f86cb3d4fbebb1c60c4](https://github.com/rohKane/progressbar/assets/47999933/58c0274f-66c3-4058-9e7d-c6becc9956a2)
-![a3ef38c1244ef77b5e5414b77bc8920d57a0e817](https://github.com/rohKane/progressbar/assets/47999933/e4bd3abd-1a38-4ce3-98d7-e79253e2db21)
+
+![Screenshot 2024-01-06 175641](https://github.com/rohKane/progressbar/assets/47999933/93ffa56f-215e-4138-a667-ae3be2de6aab)
+![Screenshot 2024-01-06 174953](https://github.com/rohKane/progressbar/assets/47999933/bb656b22-017a-411a-bb7a-6196fab0844a)
 
 # Progressbar
 
